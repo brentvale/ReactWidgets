@@ -1,0 +1,57 @@
+header{
+  height:80px;
+  width:100%;
+}
+header ul{
+  display:inline;
+}
+header ul li{
+  display:inline-block;
+  width:150px;
+  text-align:center;
+}
+header ul li:hover{
+  cursor:hand;
+  cursor:pointer;
+}
+article{
+  visibility: hidden;
+}
+.visibility-visible{
+  visibility:visible;
+}
+.focused{
+  background-color:black;
+  color:white;
+}
+.navSubList{
+  padding-left: 0px;
+}
+.centerAligned{
+  text-align:center;
+}
+
+
+/* AutoComplete */
+
+ .auto-enter {
+   opacity: 0.01;
+   transform: translateY(500%);
+ }
+
+ .auto-enter.auto-enter-active {
+   opacity: 1;
+   transform: translateY(0);
+   transition: opacity 500ms, transform 500ms;
+ }
+
+ .auto-leave {
+   opacity: 1;
+   transform: translateY(0);
+ }
+
+ .auto-leave.auto-leave-active {
+   opacity: 0.01;
+   transform: translateY(500%);
+   transition: opacity 500ms, transform 500ms;
+ }
