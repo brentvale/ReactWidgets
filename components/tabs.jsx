@@ -19,8 +19,9 @@ var Tabs = React.createClass({
   
   render: function(){
     var self = this;
+    
     return(
-      <header>
+      <section className="widgetContainer tabs">
         <ul>
           {this.props.tabsData.map(function(m, index){
             
@@ -44,7 +45,7 @@ var Tabs = React.createClass({
             )
           })}
         </ul>
-      </header>
+      </section>
     );
   }
 });

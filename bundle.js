@@ -62,13 +62,13 @@
 	    return React.createElement(
 	      'div',
 	      null,
+	      'Widget #1 Tabs',
 	      React.createElement(Tabs, { tabsData: tabsData }),
+	      'Widget #2 Clock',
 	      React.createElement(Clock, null),
-	      React.createElement(
-	        'h4',
-	        null,
-	        'Weather Widget Removed to avoid Exceeding API Call'
-	      ),
+	      'Widget #3 Weather (from my front porch)',
+	      React.createElement(Weather, null),
+	      'Widget #4 Autocompletion',
 	      React.createElement(Autocomplete, { names: names })
 	    );
 	  }
@@ -20230,8 +20230,8 @@
 	      return line;
 	    });
 	    return React.createElement(
-	      "div",
-	      null,
+	      "section",
+	      { className: "widgetContainer" },
 	      React.createElement(
 	        "h2",
 	        null,
@@ -20267,10 +20267,14 @@
 	  render: function () {
 	    var time = this.state.time.toString();
 	    return React.createElement(
-	      "h2",
-	      null,
-	      "Time = ",
-	      time
+	      "section",
+	      { className: "widgetContainer" },
+	      React.createElement(
+	        "h2",
+	        null,
+	        "Time = ",
+	        time
+	      )
 	    );
 	  }
 	});
@@ -20307,9 +20311,10 @@
 	
 	  render: function () {
 	    var self = this;
+	
 	    return React.createElement(
-	      "header",
-	      null,
+	      "section",
+	      { className: "widgetContainer tabs" },
 	      React.createElement(
 	        "ul",
 	        null,
@@ -20397,7 +20402,7 @@
 	
 	    return React.createElement(
 	      'section',
-	      null,
+	      { className: 'widgetContainer' },
 	      React.createElement(
 	        'h3',
 	        null,

@@ -50,12 +50,12 @@ var Weather = React.createClass({
     };
     var toDisplay = content.split("\n").map(function(line){return line});
     return(
-      <div>
+      <section className="widgetContainer">
         <h2>This is the weather component</h2>
         {toDisplay.map(function(line, idx){
           return(<p key={idx}>{line}</p>);
         })}
-      </div>
+      </section>
     );
   }
 });
@@ -77,7 +77,9 @@ var Clock = React.createClass({
   render: function(){
     var time = this.state.time.toString();
     return(
-      <h2>Time = {time}</h2>
+      <section className="widgetContainer">
+        <h2>Time = {time}</h2>
+      </section>
     );
     
   }

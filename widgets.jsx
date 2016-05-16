@@ -14,10 +14,10 @@ var Widgets = React.createClass({
       var names = ["brent", "jake", "gabe", "brad", "leslie", "erica", "kelly", "jay"];
     return(
       <div>
-        <Tabs tabsData={tabsData}/>
-        <Clock />
-        <h4>Weather Widget Removed to avoid Exceeding API Call</h4>
-        <Autocomplete names={names}/>
+        Widget #1 Tabs<Tabs tabsData={tabsData} />
+        Widget #2 Clock<Clock />
+        Widget #3 Weather (from my front porch)<Weather />
+        Widget #4 Autocompletion<Autocomplete names={names} />
       </div>
     );
   }

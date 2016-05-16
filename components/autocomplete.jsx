@@ -30,7 +30,7 @@ var Autocomplete = React.createClass({
     }.bind(this));
     
     return(
-      <section>
+      <section className="widgetContainer">
         <h3>Autocomplete</h3>
         <input onChange={this.handleInput} value={this.state.inputField}></input>
         <ul>
